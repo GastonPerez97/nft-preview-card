@@ -1,19 +1,12 @@
-import "./App.css";
+import "./App.css"
+import Card from "./components/Card/Card"
 
 function App() {
 	return (
-		<div className="App">
-			<header>
-				<img alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
-		</div>
-	);
+		<main>
+			<Card />
+		</main>
+	)
 }
 
-export default App;
+export default App
