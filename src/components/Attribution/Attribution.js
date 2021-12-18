@@ -1,5 +1,3 @@
-import "./Attribution.css"
-
 const Attribution = () => {
 	return (
 		<>
