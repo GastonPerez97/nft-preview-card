@@ -1,37 +1,35 @@
 import "./Card.css"
+import Price from "./Price/Price"
 
-function Card() {
+const Card = props => {
 	return (
 		<section className={"card-box"}>
-			<picture className={"card-img-container"}>
+			<div className={"card-img-container"}>
 				<div>
 					<img className={"card-img-view-icon"} src="./img/icon-view.svg" alt="Eye Icon" />
 				</div>
 
-				<img className={"card-img"} src="./img/image-equilibrium.jpg" alt="Equilibrium" />
-			</picture>
+				<img className={"card-img"} src={props.imageUrl} alt={props.imageAlt} />
+			</div>
 			
-			<h2 className={"card-title"}>Equilibrium #3429</h2>
+			<h2 className={"card-title"}>{props.title}</h2>
 			
-			<p className={"card-text"}>Our Equilibrium collection promotes balance and calm.</p>
+			<p className={"card-text"}>{props.description}</p>
 			
 			<div className={"card-details"}>
-				<div className={"card-details-price"}>
-					<img src="./img/icon-ethereum.svg" alt="Ethereum Icon" />
-					<p>0.041 ETH</p>
-				</div>
+				<Price value={props.price} paymentMethod={props.paymentMethod} />
 				
 				<div className={"card-details-time"}>
 					<img src="./img/icon-clock.svg" alt="Clock Icon" />
-					<p>3 days left</p>
+					<p>{props.daysLeft} days left</p>
 				</div>
 			</div>
 
 			<hr />
 
 			<div className={"card-author"}>
-				<img src="./img/image-avatar.png" alt="Author Avatar" />
-				<p>Creation of <span>Jules Wyvern</span></p>
+				<img src={props.authorImg} alt="Author Avatar" />
+				<p>Creation of <span>{props.author}</span></p>
 			</div>
 		</section>
 	)

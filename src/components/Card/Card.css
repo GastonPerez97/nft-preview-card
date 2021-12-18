@@ -1,6 +1,6 @@
 .card-box {
 	width: 280px;
-	height: 520px;
+	height: 515px;
 
 	background-color: var(--card-bg-color);
 	padding: 1.34em;
@@ -69,21 +69,14 @@
 	justify-content: space-between;
 }
 
-.card-details-price,
 .card-details-time,
 .card-author {
 	display: flex;
 	align-items: center;
 }
 
-.card-details-price p,
 .card-details-time p {
 	margin-left: 7px;
-}
-
-.card-details-price {
-	font-size: 0.9em;
-	font-weight: 500;
 }
 
 .card-details-time {
