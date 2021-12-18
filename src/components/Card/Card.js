@@ -3,7 +3,13 @@ import "./Card.css"
 function Card() {
 	return (
 		<section className={"card-box"}>
-			<img className={"card-img"} src="./img/image-equilibrium.jpg" alt="Equilibrium" />
+			<picture className={"card-img-container"}>
+				<div>
+					<img className={"card-img-view-icon"} src="./img/icon-view.svg" alt="Eye Icon" />
+				</div>
+
+				<img className={"card-img"} src="./img/image-equilibrium.jpg" alt="Equilibrium" />
+			</picture>
 			
 			<h2 className={"card-title"}>Equilibrium #3429</h2>
 			

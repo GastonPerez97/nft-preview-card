@@ -13,14 +13,46 @@
 	transform: translate(-50%, -50%);
 }
 
-.card-img {
+.card-img-container {
+	position: relative;
+}
+
+.card-img-container:hover {
+	cursor: pointer;
+}
+
+.card-img,
+.card-img-container div {
 	width: 100%;
 	border-radius: 10px;
+	transition: 0.3s ease;
+}
+
+.card-img-container div {
+	position: absolute;
+	top: 0;
+	background: rgba(255, 255, 255, 0.4);
+	opacity: 0;
+	z-index: 10;
+	height: 98%;
+}
+
+.card-img-view-icon {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card-img-view-icon:hover,
+.card-img-container div:hover {
+	opacity: 1;
 }
 
 .card-title {
 	font-size: 22px;
 	font-weight: 500;
+	transition: 0.3s ease;
 }
 
 .card-text {
@@ -78,6 +110,13 @@
 
 .card-author span {
 	color: var(--white-color);
+	transition: 0.3s ease;
+}
+
+.card-author span:hover,
+.card-title:hover {
+	cursor: pointer;
+	color: #cacaca;
 }
 
 /* ETH color cyan  */
