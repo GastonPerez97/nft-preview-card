@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: This repo.
-- Live Site URL: [https://nft-preview-card-gaston-perez.vercel.app/](https://nft-preview-card-gaston-perez.vercel.app/)
+- Live Site URL: [https://nft-preview-card-react.vercel.app/](https://nft-preview-card-react.vercel.app/)
 
 ## My process
 
